@@ -93,7 +93,7 @@ body {
 /* button hidden by default */
 .hidden-btn {
     opacity: 0;
-    pointer-events: auto;   /* still detects hover */
+    pointer-events: auto;   /* still detects hover  yeahhh*/
     transition: opacity 0.3s ease;
     padding: 1rem 2rem;
     position: sticky; 
@@ -101,7 +101,6 @@ body {
     margin-left: -8px;
 }
 
-/* reveal when hovering over itself */
 .hidden-btn:hover {
     opacity: 1;
 }
@@ -182,7 +181,7 @@ body {
   background: rgba(255, 255, 255, 0.06);
 }
 
-/* subtle pulsing glow */
+/* subtle pulsing glow  (oh)*/
 .glow {
   animation: glowPulse 2.5s infinite ease-in-out;
 }
@@ -366,7 +365,7 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* subtle glow border */
+/* subtle glow border (yeah)*/
 .update::before {
   content: "";
   position: absolute;
@@ -431,7 +430,7 @@ body {
   font-size: 1.05rem;
 }
 
-/* glowing bullet */
+/* glowing bullet (thats actaully super cool)*/
 .update li::before {
   content: "✦";
   position: absolute;
@@ -447,13 +446,13 @@ body {
 
 .update-badge {
     display: inline-block;
-    padding: 0.4rem 1rem;   /* bigger padding */
+    padding: 0.4rem 1rem;
     border-radius: 14px;
-    font-size: 1rem;        /* larger font */
-    font-weight: 800;       /* bolder */
+    font-size: 1rem; 
+    font-weight: 800; 
     margin-left: 1rem;      /* more space from title */
     user-select: none;
-    pointer-events: none;   /* unclickable */
+    pointer-events: none; 
     vertical-align: middle;
 }
 
@@ -544,7 +543,7 @@ body {
   position: relative;
 }
 
-/* subtle glow rim */
+/* glow  for the rim */
 .contact-card::before {
   content: "";
   position: absolute;
@@ -668,7 +667,7 @@ body {
 }
 
 /* =====================
-   CUSTOM SCROLLBAR (DARK GLASS)
+   CUSTOM SCROLLBAR
 ===================== */
 
 /* Firefox */
@@ -704,7 +703,6 @@ body {
     inset 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
-/* hover = extra glow */
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(
     180deg,
@@ -716,7 +714,6 @@ body {
     inset 0 0 14px rgba(255, 255, 255, 0.35);
 }
 
-/* Optional: subtle track glow */
 ::-webkit-scrollbar-track:hover {
   box-shadow:
     inset 0 0 12px rgba(0, 0, 0, 0.7),
@@ -751,7 +748,7 @@ body::before {
 }
 
 /* =====================
-   LEGAL PAGES (TOS + PRIVACY)
+   LEGAL PAGES 
 ===================== */
 
 .page-tos {
@@ -762,7 +759,6 @@ body::before {
   max-width: 900px;
 }
 
-/* headers */
 .legal-header {
   text-align: center;
   margin: 4rem 0 2.5rem;
@@ -780,7 +776,6 @@ body::before {
   font-size: 0.95rem;
 }
 
-/* sections */
 .legal-section {
   background: linear-gradient(
     180deg,
@@ -810,7 +805,6 @@ body::before {
   line-height: 1.7;
 }
 
-/* lists */
 .legal-section ul {
   list-style: none;
   margin-top: 1rem;
@@ -831,7 +825,6 @@ body::before {
   text-shadow: 0 0 12px var(--primary-glow);
 }
 
-/* links */
 .legal a {
   color: var(--primary);
   text-decoration: none;
@@ -842,7 +835,6 @@ body::before {
   text-shadow: 0 0 12px var(--primary-glow);
 }
 
-/* jump link under TOS */
 .legal-jump {
   display: inline-block;
   margin-top: 0.8rem;
@@ -876,7 +868,7 @@ body::before {
   min-height: calc(100svh - 70px);
 }
 
-/* card */
+/* err card */
 .error-card {
   max-width: 520px;
   width: 100%;
@@ -897,7 +889,6 @@ body::before {
     0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-/* glow rim */
 .error-card::before {
   content: "";
   position: absolute;
@@ -913,7 +904,7 @@ body::before {
   pointer-events: none;
 }
 
-/* big 404 number */
+/* BIIIIIIG 404 number */
 .error-code {
   display: block;
   font-size: clamp(4rem, 10vw, 6rem);
@@ -924,7 +915,7 @@ body::before {
   text-shadow: 0 0 40px var(--primary-glow);
 }
 
-/* text */
+/* text (lol)*/
 .error-card h1 {
   font-size: 1.8rem;
   font-weight: 800;
@@ -937,7 +928,7 @@ body::before {
   margin-bottom: 2rem;
 }
 
-/* buttons */
+/* buttons (duh)*/
 .error-actions {
   display: flex;
   justify-content: center;
@@ -1003,7 +994,7 @@ body::before {
 }
 
 /* =====================
-   HAMBURGER → X
+   HAMBURGER => X
 ===================== */
 .hamburger {
   display: none;
@@ -1075,8 +1066,8 @@ body::before {
    SECRET BUTTON CSS (NOT SO SECRET ANYMORE IF YOU READ THIS HUH?)
 ===================== */
 .if-you-found-this-in-the-source-code-thats-fucking-insane-bro-like-really-LOL-WTFF {
-  font-weight: 900; /* makes it pop */
-  background: none; /* remove gradient clipping since we animate color directly */
+  font-weight: 900;
+  background: none;
   color: #ff0000;
   animation: thisKeyframeIsSponsoredByTheCouncilOfTheJavaIslandInIndonesia 1s linear infinite, cygan_type_of_glow 1.5s ease-in-out infinite;
   text-shadow:
@@ -1113,13 +1104,11 @@ body::before {
     justify-content: center;
 }
 
-/* Search wrapper to hold prefix inside input */
 .search-wrapper {
     position: relative;
-    width: 200px;  /* smaller width */
+    width: 200px;
 }
 
-/* Prefix inside input */
 .search-prefix {
     position: absolute;
     left: 0.8rem;
@@ -1127,14 +1116,13 @@ body::before {
     transform: translateY(-50%);
     color: var(--primary);
     font-weight: 700;
-    pointer-events: none; /* can't click it */
+    pointer-events: none;
     text-shadow: 0 0 8px var(--primary-glow);
 }
 
-/* Input with padding to avoid overlap with prefix */
 .search-wrapper input {
     width: 100%;
-    padding: 0.6rem 1rem 0.6rem 1.6rem; /* left padding for prefix */
+    padding: 0.6rem 1rem 0.6rem 1.6rem; 
     border-radius: 12px;
     border: 1px solid var(--border);
     background: rgba(255,255,255,0.05);
@@ -1144,13 +1132,11 @@ body::before {
     transition: border 0.2s, box-shadow 0.2s;
 }
 
-/* Input focus effect */
 .search-wrapper input:focus {
     border: 1px solid var(--primary);
     box-shadow: 0 0 10px var(--primary-glow);
 }
 
-/* Button */
 .changelog-search button {
     padding: 0.6rem 1rem;
     border-radius: 12px;
