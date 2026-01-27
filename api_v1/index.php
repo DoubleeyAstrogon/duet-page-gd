@@ -1,7 +1,4 @@
 <?php
-header("Access-Control-Allow-Origin: https://duet.page.gd");
-header("Access-Control-Allow-Methods: GET, POST");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Content-Type: application/json");
 
 $file = "achievements.json";
