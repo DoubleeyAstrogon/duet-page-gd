@@ -5,13 +5,9 @@
 
 DirectoryIndex home.html
 
-# Enable rewrite engine
 RewriteEngine On
 RewriteBase /
 
-# =========================
-# Custom error pages
-# =========================
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
@@ -29,9 +25,6 @@ RewriteRule ^(.*)$ $1.html [L]
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# =========================
-# Optional: Force trailing slash for directories
-# =========================
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
 

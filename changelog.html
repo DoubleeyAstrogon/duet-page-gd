@@ -146,12 +146,11 @@
   </main>
     
     <script>
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("changelogSearch");
     const searchBtn = document.getElementById("changelogSearchBtn");
     const noResults = document.getElementById("noResults");
 
-    // ONLY real update cards (exclude no-results)
     const updates = document.querySelectorAll(".update:not(.no-results)");
 
     function filterUpdates() {
@@ -168,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Show no-results ONLY if query exists and nothing matched
         if (query !== "" && !found) {
             noResults.style.display = "block";
         } else {

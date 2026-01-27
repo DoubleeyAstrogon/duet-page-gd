@@ -1,10 +1,9 @@
-# Włącz mod_rewrite
 RewriteEngine On
 
-# Jeśli ktoś wchodzi na /api bez index.php, przekieruj do index.php
+# redicted /api to /api/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^$ index.php [L]
 
-# Wszystkie requesty przekieruj do index.php, zachowując query string
+# redirect to /api/index.php with the query
 RewriteRule ^(.*)$ index.php [L,QSA]

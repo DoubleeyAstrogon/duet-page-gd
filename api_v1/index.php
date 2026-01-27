@@ -3,7 +3,7 @@ header("Content-Type: application/json");
 
 $file = "achievements.json";
 
-// init pliku
+// init
 if (!file_exists($file)) {
     file_put_contents($file, json_encode([]));
 }
@@ -11,9 +11,6 @@ if (!file_exists($file)) {
 $data = json_decode(file_get_contents($file), true);
 if (!$data) $data = [];
 
-// ============================
-// BRAK PARAMETRÓW
-// ============================
 if (empty($_GET)) {
     echo json_encode([
         "status" => "error",
@@ -22,9 +19,7 @@ if (empty($_GET)) {
     exit;
 }
 
-// ============================
-// DODAWANIE
-// ============================
+//add
 if (
     isset($_GET['add']) &&
     $_GET['add'] === "true" &&
@@ -73,9 +68,7 @@ if (
     exit;
 }
 
-// ============================
-// POBIERANIE USERA
-// ============================
+//get
 if (
     isset($_GET['user_id']) &&
     count($_GET) === 1
@@ -100,9 +93,7 @@ if (
     exit;
 }
 
-// ============================
-// WSZYSTKO INNE
-// ============================
+//else
 echo json_encode([
     "status" => "error",
     "message" => "invalid params"

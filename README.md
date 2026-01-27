@@ -18,8 +18,6 @@ Check out the website or contribute to the project by exploring the repository.
 
 Feel free to open issues or submit pull requests if you want to help improve the bot or the website.
 
----
-
 ### Contact
 
 For support or questions, join the Discord server linked on the website.
