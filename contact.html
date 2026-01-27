@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Duet — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="page-contact">
+  <nav class="navbar">
+    <a class="brand" href="home.html">
+      <img src="https://media.discordapp.net/attachments/1003623652039856199/1465362382904885362/duetLogo.png?ex=6978d491&is=69778311&hm=0245f876093062a8882c52ae500521c3b4cb057d6aced6438a0c7f8962aa5789&=&format=webp&quality=lossless" alt="Duet logo" class="nav-logo">
+      <span class="brand-text">Duet</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="home.html" class="nav-link">Home</a></li>
+      <li><a href="changelog.html" class="nav-link">Changelog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a class="tos-link" href="tos.html">Terms</a>
+  </nav>
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+      <a href="home.html" class="mobile-link">Home</a>
+      <a href="changelog.html" class="mobile-link">Changelog</a>
+      <a href="contact.html" class="mobile-link active">Contact</a>
+      <a href="tos.html" class="mobile-link mobile-terms">Terms</a>
+      <div class="mobile-footer">
+        <span>© 2026 DUET – made by lolspye</span>
+        <a href="https://discord.gg/ckPHMythpK" target="_blank" rel="noopener noreferrer">Join Discord</a>
+      </div>
+    </div>
+
+  <main class="container contact-page">
+  <div class="contact-card reveal">
+    <h2>Contact the Duet Team</h2>
+
+    <p class="contact-sub">
+      Need help, found a bug, or have a feature idea?
+      We usually respond within 24–48 hours.
+    </p>
+
+    <hr>
+
+    <div class="contact-actions">
+      <!-- Gmail button -->
+      <a
+        id="gmailBtn"
+        class="btn btn-primary glow contact-btn"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=zkonto45@gmail.com&su=Duet%20Support"
+        target="_blank"
+        rel="noopener"
+      >
+        📧 Contact via Gmail
+      </a>
+
+      <!-- Copy email -->
+      <button class="btn btn-ghost contact-btn" id="copyEmail">
+        📋 Copy Email Address
+      </button>
+	
+      <div class="contact-fallback">
+        Or email us directly:
+        <a href="mailto:zkonto45@gmail.com">zkonto45@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+# =========================
+# Duet InfinityFree .htaccess
+# Handles: Pretty URLs + Custom Errors
+# =========================
+
+DirectoryIndex home.html
+
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# =========================
+# Custom error pages
+# =========================
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# =========================
+# Remove .html from URLs (Pretty URLs)
+# =========================
+
+# If requested URL is not a directory and .html file exists, serve it
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Optional: Redirect .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# =========================
+# Optional: Force trailing slash for directories
+# =========================
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+
+RewriteEngine On
+RewriteRule ^api/(.*)$ api_v1/$1 [L,QSA]
+

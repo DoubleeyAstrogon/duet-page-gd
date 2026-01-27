@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Duet — Changelog</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="page-changelog">
+  <nav class="navbar">
+    <a class="brand" href="home.html">
+      <img src="https://media.discordapp.net/attachments/1003623652039856199/1465362382904885362/duetLogo.png?ex=6978d491&is=69778311&hm=0245f876093062a8882c52ae500521c3b4cb057d6aced6438a0c7f8962aa5789&=&format=webp&quality=lossless" alt="Duet logo" class="nav-logo">
+      <span class="brand-text">Duet</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="home.html" class="nav-link">Home</a></li>
+      <li><a href="changelog.html" class="nav-link">Changelog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a class="tos-link" href="tos.html">Terms</a>
+  </nav>
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+      <a href="home.html" class="mobile-link">Home</a>
+      <a href="changelog.html" class="mobile-link active">Changelog</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+      <a href="tos.html" class="mobile-link mobile-terms">Terms</a>
+      <div class="mobile-footer">
+        <span>© 2026 DUET – made by lolspye</span>
+        <a href="https://discord.gg/ckPHMythpK" target="_blank" rel="noopener noreferrer">Join Discord</a>
+      </div>
+    </div>
+
+  <header class="page-header">
+    <h1>Changelog</h1>
+  </header>
+    
+    <div class="changelog-search">
+      <div class="search-wrapper">
+        <span class="search-prefix">v</span>
+        <input type="text" id="changelogSearch" placeholder="Search versions..." />
+      </div>
+      <button id="changelogSearchBtn">Search</button>
+    </div>
+
+    <article class="update reveal no-results" id="noResults">
+      <h2>No updates found</h2>
+      <ul>
+        <li>Try a different version number, date, or keyword. You can also sort by Major/Minor</li>
+      </ul>
+    </article>
+
+  <main class="changelog container">
+      
+    <article class="update reveal">
+      <h2>v1.76 — October 16th 2022 <span class="update-badge minor">Minor</span></h2>
+      <ul>
+        <li>Bot now mentions slash commands in error messages.</li>
+        <li>Improved Stability.</li>
+        <li>Fixed 3 bugs.</li>
+      </ul>
+    </article>
+      
+      <article class="update reveal">
+      <h2>v1.75 — 17th September 2022 <span class="update-badge minor">Minor</span></h2>
+      <ul>
+        <li>Added /balance</li>
+        <li>Added /withdraw</li>
+        <li>Added /deposit</li>
+        <li>Fixed some bugs and issues.</li>
+      </ul>
+    </article>
+      
+       <article class="update reveal">
+      <h2>v1.7 — 10th September 2022 <span class="update-badge major">Major</span></h2>
+      <ul>
+        <li>Added /settings</li>
+        <li>Added /beg</li>
+        <li>Added /crime</li>
+        <li>Added /search</li>
+          <li>Added /collect-rewards (only for DCS discords erver)</li>
+          <li>Added /changelog</li>
+          <h2></h2>
+          <li>Removed /rob-manage (new = /settings)</li>
+          <li>Removed /only-in-channel (new = /settings)</li>
+          <li>Removed /reset-only-channel (new = /settings)</li>
+          <li>Removed /passive (new = /settings)</li>
+          <li>Removed /leaderboard (new = /leaderboards)</li>
+          <li>Removed /leaderboard-spy (new = /leaderboards)</li>
+          <li>Removed /lottery</li>
+          <li>Removed /lotterylist</li>
+          <li>Removed /updates</li>
+          <li>Removed /dungeons (beta feature that failed, to be revamped in 2.0)</li>
+          <h2></h2>
+          <li>Combat Points have been renamed as Combat Power</li>
+          <li>Added Emoji For Combat Power</li>
+          <li>/lumber-camp has been renamed to /lumbercamp</li>
+          <li>The waiting time for /mine /quarry and /lumbecamp has been lowered from 180s to 145s </li>
+          <li>Fixed the bug where you could Craft multiple weapons</li>
+          <li>New Big Feature: /leaderboards with built in old /leaderboard-spy (now deleted) as a simple button</li>  
+      </ul>
+    </article>
+      
+      <article class="update reveal">
+      <h2>v1.6 — 17th September 2022 <span class="update-badge major">Major</span></h2>
+      <ul>
+        <li>Added /mineshaft</li>
+        <li>Added /compare</li>
+        <li>Added /work</li>
+        <li>Added /only-in-channel</li>
+          <li>Added /reset-only-channel</li>
+          <li>Added /rob-manage</li>
+          <li>Added /leaderboard</li>
+          <li>Added /leaderboard-spy</li>
+          <li>Added /website  (lol)</li>
+          <li>Added Supporter Badge, become a supporter on Duet's offical discord server to get this badge!</li>
+          <li>Added Crate for 1 500 coins and Golden crate for 2 300 coins to the /market</li>
+          <li>Added Beta feature /give</li>
+          <h2></h2>
+          <li>Removed ?privacyPolicy</li>
+          <li>Removed manually accepting the privacy policy to use the bot</li>
+          <li>Changed the terms of service and privacy policy</li>
+          <li>Changed /versus to a Beta Feature</li>
+          <li>Removed /rewards</li>
+          <li>Fixed /adventure bugs</li>
+          <li>XP, Heal and Revive potions have their own emoji now</li>
+          <li>Fixed /crates</li>
+          <li>Renamed /shop to /market</li>
+          <li>Added the ability to buy multiple items in /market</li>
+          <li>Changed the cost of Heal Potions from 250 to 500</li>
+          <li>Changed the cost of Revive Potions from 300 to 600</li>
+          <li>Changed the cost of Wrench from 1000 to 1200</li>   
+      </ul>
+    </article>
+  </main>
+    
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("changelogSearch");
+    const searchBtn = document.getElementById("changelogSearchBtn");
+    const noResults = document.getElementById("noResults");
+
+    // ONLY real update cards (exclude no-results)
+    const updates = document.querySelectorAll(".update:not(.no-results)");
+
+    function filterUpdates() {
+        const query = searchInput.value.toLowerCase().trim();
+        let found = false;
+
+        updates.forEach(update => {
+            const text = update.textContent.toLowerCase();
+            if (query !== "" && text.includes(query)) {
+                update.style.display = "";
+                found = true;
+            } else {
+                update.style.display = query === "" ? "" : "none";
+            }
+        });
+
+        // Show no-results ONLY if query exists and nothing matched
+        if (query !== "" && !found) {
+            noResults.style.display = "block";
+        } else {
+            noResults.style.display = "none";
+        }
+    }
+
+    searchInput.addEventListener("input", filterUpdates);
+    searchBtn.addEventListener("click", filterUpdates);
+});
+</script>
+
+</body>
+</html>
